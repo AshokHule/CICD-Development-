@@ -4,7 +4,7 @@ pipeline {
             stage ('Git-Checkout') {  
                 steps{
 			checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHub', url: 'https://github.com/AshokHule/CICD-Development.git']])
-                    //git checkout 'https://github.com/AshokHule/CICD-Development.git'
+                    //git checkout 'https://github.com/AshokHule/CICD-Development-.git'
                     echo "Checkout successful";
                 } 
             }
